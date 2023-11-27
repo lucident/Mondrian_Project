@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: ceneter;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+
+    }
+    
+    .mondrian_paintings {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+    
+    .top_right, .mid_f, .mid_s, .long, .low_f {
+      background-color: #F0F1EC;
+    }
+
+    .red {
+      background-color: #e72f24;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-column-start: 4;
+      grid-column-end: -1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border-bottom: 10px solid #000;
+
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 4;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+    }
+
+    .top_right {
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+
+    .mid_f {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    
+    }
+
+    .mid_s {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .long {
+      grid-column-start: 4;
+      grid-column-end: -1;
+      grid-row-start: 3;
+      grid-row-end: -1;
+    }
+
+
+
+   
+
+  
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="mondrian_paintings">
+  <div class="box red"></div>
+  <div class="box top_right"></div>
+  <div class="box mid_f"></div>
+  <div class="box mid_s"></div>
+  <div class="box blue"></div>
+  <div class="box long"></div>
+  <div class="box low_f"></div>
+  <div class="box yellow"></div>
+  <div class="box black"></div>
+
+</div>
+</body>
+
+</html>
